@@ -6,7 +6,6 @@ function primes() {
     var limit = Number(prompt('Введите верхнюю границу поиска'));
 
     if ((start > 1) &&
-        (limit > 1) &&
         (start <= limit) &&
         (Number.isInteger(start)) &&
         (Number.isInteger(limit))) {
