@@ -4,17 +4,10 @@ var mainNumber = 100;
 
 function biggerThan(mainNumber) {
 
-    var customNumber = prompt('Введи число не меньше ' + mainNumber);
-    
-    if (customNumber === null) {
-        return;
-    } else {
-        customNumber = Number(customNumber);
-    }
+    var customNumber;
 
-    while( customNumber < mainNumber || isNaN(customNumber) ) {
-        customNumber = prompt('Ошибка: ' + customNumber +
-                              ' меньше чем ' + mainNumber + ' , попробуй ещё раз.');
+    while (customNumber < mainNumber || isNaN(customNumber)) {
+        customNumber = prompt('Введи число не меньше ' + mainNumber);
         if (customNumber === null) {
             return;
         } else {
